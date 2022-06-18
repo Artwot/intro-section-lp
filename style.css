@@ -26,38 +26,17 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
   box-sizing: border-box;
 }
 
-header > img {
-  width: 100px;
+header > img:first-child {
+  width: 90px;
 }
 
-/* Hamburger menu */
-.hamburger-menu {
-  height: 2rem;
-  width: 2.2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.hamburger-menu:hover {
+header > img:last-child {
+  height: 1.25rem;
   cursor: pointer;
-}
-
-.hamburger-top,
-.hamburger-middle,
-.hamburger-bottom {
-  width: 100%;
-  border: 1px solid #000;
-}
-
-.hamburger-middle {
-  margin: 0.5rem 0;
 }
 
 /* Lateral menu */
@@ -88,6 +67,7 @@ header > img {
   bottom: 0;
   left: 0;
   right: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 nav {
