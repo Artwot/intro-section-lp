@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style> -->
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.svg" alt="snap" />
+      <!-- Hamburger menu -->
+      <span class="hamburger-menu">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </span>
+    </header>
+
+    <main class="main-content ">
+      <div>
+        <picture>
+          <img
+            class="hero-image"
+            src="images/image-hero-mobile.png"
+            alt="snap"
+          />
+        </picture>
+      </div>
+      
+      <!-- This div tag is for overlay -->
+      <div class=""></div>
+
+      <!-- Lateral menu -->
+      <div class="lateral-menu">
+        <img src="./images/icon-close-menu.svg" alt="Close menu" />
+        <nav>
+          <ul class="lateral-menu-options">
+            <li>
+              Features
+              <img src="./images/icon-arrow-down.svg" alt="Show more" />
+            </li>
+            <li>
+              Company <img src="./images/icon-arrow-down.svg" alt="Show more" />
+            </li>
+            <li>Careers</li>
+            <li>About</li>
+          </ul>
+        </nav>
+        <button class="login-button">Login</button>
+        <button class="register-button">Register</button>
+      </div>
+      <!--Features Company Careers About Login Register -->
+
+      <div class="information">
+        <h1>Make remote work</h1>
+
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+
+        <button>Learn more</button>
+
+        <section class="clients">
+          <span>
+            <img
+              class="client-image"
+              src="images/client-databiz.svg"
+              alt="databiz"
+            />
+          </span>
+          <span>
+            <img
+              class="client-image"
+              src="images/client-audiophile.svg"
+              alt="audiophile"
+            />
+          </span>
+          <span>
+            <img class="client-image" src="images/client-meet.svg" alt="meet" />
+          </span>
+          <span>
+            <img
+              class="client-image"
+              src="images/client-maker.svg"
+              alt="marker"
+            />
+          </span>
+        </section>
+      </div>
+    </main>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>

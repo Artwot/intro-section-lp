@@ -1,0 +1,203 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+/* Colors */
+/* Neutral */
+:root {
+  --almost-white: hsl(0, 0%, 98%);
+  --medium-gray: hsl(0, 0%, 41%);
+  --almost-black: hsl(0, 0%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+
+body {
+  margin: 0;
+  max-height: 100vh;
+  font-size: 18px;
+  height: 100vh;
+}
+
+header {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+header > img {
+  width: 100px;
+}
+
+/* Hamburger menu */
+.hamburger-menu {
+  height: 2rem;
+  width: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hamburger-menu:hover {
+  cursor: pointer;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.hamburger-middle {
+  margin: 0.5rem 0;
+}
+
+/* Lateral menu */
+.lateral-menu {
+  height: 100vh;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: var(--almost-white);
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 2rem 1rem;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+  /* z-index: -1; */
+}
+
+.lateral-menu.active {
+  transform: translateX(0);
+}
+
+.overlay {
+  position: fixed;
+  background: rgba(0,0,0, 0.7);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+nav {
+  font-weight: lighter;
+}
+
+/* 'Close menu' icon */
+.lateral-menu > img {
+  width: 1.8rem;
+  align-self: flex-end;
+}
+
+.lateral-menu-options {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.lateral-menu-options > li {
+  margin-bottom: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Give some spacing between the text and arrow down icon */
+.lateral-menu-options > li:first-child > img,
+.lateral-menu-options > li:nth-child(2) > img {
+  margin-left: 0.5rem;
+}
+
+.lateral-menu > button {
+  background-color: var(--almost-white);
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  color: var(--almost-black);
+  margin-bottom: 0.7rem;
+}
+
+.login-button {
+  border: none;
+}
+
+.register-button {
+  border: 1.8px solid var(--almost-black);
+  border-radius: 1rem;
+}
+
+
+/* Main content */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: calc(100vh - 90px);
+}
+
+.hero-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* General description */
+.information {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  margin: 0 1rem;
+  flex-grow: 1;
+}
+
+.information > h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.information > p {
+  color: var(--medium-gray);
+  font-weight: 500;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+.information > button {
+  background-color: var(--almost-black);
+  border: none;
+  border-radius: 1rem;
+  color: var(--almost-white);
+  padding: 1rem 1.3rem;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+/* Brands */
+.clients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clients > span {
+  width: calc(100% / 4);
+}
+
+.client-image {
+  width: 100%;
+  padding: 0.5rem;
+}
