@@ -62,7 +62,7 @@ header > img:last-child {
 
 .overlay {
   position: fixed;
-  background: rgba(0,0,0, 0.7);
+  background: rgba(0, 0, 0, 0.7);
   top: 0;
   bottom: 0;
   left: 0;
@@ -94,7 +94,7 @@ nav {
 
 /* Give some spacing between the text and arrow down icon */
 .lateral-menu-options > li:first-child > img,
-.lateral-menu-options > li:nth-child(2) > img {
+.lateral-menu-options > li:nth-child(3) > img {
   margin-left: 0.5rem;
 }
 
@@ -115,6 +115,33 @@ nav {
   border-radius: 1rem;
 }
 
+/* Panel for Features & Company */
+.features-panel,
+.company-panel {
+  padding: 0 2rem;
+}
+
+.features-panel-list,
+.company-panel-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.features-panel-list > li,
+.company-panel-list > li {
+  margin-bottom: 1.6rem;
+}
+
+.features-panel-list > li {
+  display: flex;
+  align-items: center;
+}
+
+.features-panel-list > li > img {
+  width: 20px;
+  margin-right: 1rem;
+}
 
 /* Main content */
 .main-content {
@@ -171,6 +198,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 .clients > span {

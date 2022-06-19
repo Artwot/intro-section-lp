@@ -31,10 +31,10 @@
     <header>
       <img src="images/logo.svg" alt="snap" />
       <!-- Hamburger menu -->
-      <img id="open-menu" src="images/icon-menu.svg" alt="menu">
+      <img id="open-menu" src="images/icon-menu.svg" alt="menu" />
     </header>
 
-    <main class="main-content ">
+    <main class="main-content">
       <div>
         <picture>
           <img
@@ -44,22 +44,58 @@
           />
         </picture>
       </div>
-      
+
       <!-- This div tag is for overlay -->
-      <div id="overlay" class=""></div>
+      <div id="overlay" class="overlay"></div>
 
       <!-- Lateral menu -->
-      <div class="lateral-menu">
-        <img id="close-menu" src="./images/icon-close-menu.svg" alt="Close menu" />
+      <div class="lateral-menu active">
+        <img
+          id="close-menu"
+          src="./images/icon-close-menu.svg"
+          alt="Close menu"
+        />
         <nav>
           <ul class="lateral-menu-options">
             <li>
               Features
               <img src="./images/icon-arrow-down.svg" alt="Show more" />
             </li>
+            <section class="features-panel">
+              <ul class="features-panel-list">
+                <li>
+                  <img src="./images/icon-todo.svg" alt="Show more" />Todo List
+                </li>
+                <li>
+                  <img
+                    src="./images/icon-calendar.svg"
+                    alt="Show more"
+                  />Calendar
+                </li>
+                <li>
+                  <img
+                    src="./images/icon-reminders.svg"
+                    alt="Show more"
+                  />Reminders
+                </li>
+                <li>
+                  <img
+                    src="./images/icon-planning.svg"
+                    alt="Show more"
+                  />Planing
+                </li>
+              </ul>
+            </section>
             <li>
               Company <img src="./images/icon-arrow-down.svg" alt="Show more" />
             </li>
+            <section class="company-panel">
+              <ul class="company-panel-list">
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </section>
             <li>Careers</li>
             <li>About</li>
           </ul>
